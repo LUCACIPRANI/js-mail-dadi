@@ -1,39 +1,37 @@
-// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il king.
 
-var computer = Math.floor(Math.random() * 7);
-console.log(computer);
+var king = Math.floor(Math.random() * 7);
+console.log(king);
 
-document.getElementById("computer").innerHTML = "Computer " + computer;
+document.getElementById("king").innerHTML = "King " + king;
 
-var Alberto = Math.floor(Math.random() * 7);
-console.log(Alberto);
+var queen = Math.floor(Math.random() * 7);
+console.log(queen);
 
-document.getElementById("alberto").innerHTML = "Alberto " + Alberto;
+document.getElementById("queen").innerHTML = "Queen " + queen;
 
-var franco = Math.floor(Math.random() * 7);
-console.log(franco);
+var jack = Math.floor(Math.random() * 7);
+console.log(jack);
 
-document.getElementById("franco").innerHTML = "Franco " + franco;
-
-var vincente = "la partita";
+document.getElementById("jack").innerHTML = "Jack " + jack;
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-if(computer > Alberto && computer > franco) {
-    console.log("computer vince");
-    document.getElementById("computervincente").innerHTML = "Computer vince la partita";
+if(king > queen && king > jack) {
+    console.log("king vince");
+    document.getElementById("kingvincente").innerHTML = "King vince la partita";
     
-} else if(Alberto > computer && Alberto > franco){
-    console.log("Alberto vince");
-    document.getElementById("albertovincente").innerHTML = "Alberto vince la partita";
+} else if(queen > king && queen > jack){
+    console.log("queen vince");
+    document.getElementById("queenvincente").innerHTML = "Queen vince la partita";
 
-} else if (franco > Alberto && franco > computer){
-    console.log("Franco vince");
-    document.getElementById("francovincente").innerHTML = "Franco vince la partita";
+} else if (jack > queen && jack > king){
+    console.log("jack vince");
+    document.getElementById("jackvincente").innerHTML = "Jack vince la partita";
 
-} else if (franco > Alberto && franco > computer){
+} else if (jack == queen && jack == king){
     console.log("parità");
-    document.getElementById("fparità").innerHTML = "Parità";
+    document.getElementById("parità").innerHTML = "Parità";
 
 } else {
     console.log("non definito");

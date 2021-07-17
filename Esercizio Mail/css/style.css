@@ -1,3 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    border: 5px solid black;
+    background-image: url("https://cdn.wallpapersafari.com/38/57/fCnP0h.jpg");
+    background-size: cover;
+}
+
+main{
+    margin: 0 auto;
+    padding: 20%;
+}
+
 h1{
-    color: red;
+    margin-bottom: 50px;
+    color: green;
 }

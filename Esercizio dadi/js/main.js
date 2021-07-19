@@ -1,17 +1,17 @@
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il king.
 
-var king = Math.floor(Math.random() * 7);
-console.log(king);
+var king = Math.floor(Math.random() * 6) + 1;
+console.log("king " + king);
 
 document.getElementById("king").innerHTML = "King " + king;
 
-var queen = Math.floor(Math.random() * 7);
-console.log(queen);
+var queen = Math.floor(Math.random() * 6) + 1;
+console.log("queen " + queen);
 
 document.getElementById("queen").innerHTML = "Queen " + queen;
 
-var jack = Math.floor(Math.random() * 7);
-console.log(jack);
+var jack = Math.floor(Math.random() * 6) + 1;
+console.log("jack " + jack);
 
 document.getElementById("jack").innerHTML = "Jack " + jack;
 
@@ -35,7 +35,7 @@ if(king > queen && king > jack) {
 
 } else {
     console.log("non definito");
-    document.getElementById("nodefined").innerHTML = "Spareggi ";
+    document.getElementById("nodefined").innerHTML = "Non definito ";
 }
 
 
